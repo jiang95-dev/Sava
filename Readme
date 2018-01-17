@@ -1,0 +1,34 @@
+This is mp4 for CS425.
+
+Member:
+Jintao Jiang(jjiang43), Hao Yang(haoy4)
+
+Directory:
+/
+| - Client.java
+| - Server.java
+| - FileManager.java
+| - GraphProcessor.java
+| - MembershipManager.java
+| - PageRankVertex.java
+| - ShortestPathVertex.java
+| - Vertex.java
+| - Run.java
+| - run.sh
+| - graph.txt.zip
+| - Readme
+| - 425_MP4_Report.pdf
+
+File explanation: 
+GraphProcessor.java is the Sava program. Both worker and master implementations are inside that file.
+Server.java is the client machine waiting for user's inputs.
+MembershipManager.java is used for sending heartbeat and detect machine failure. 
+FileManager.java and Run.java is used for file transfer in SDFS.
+Vertex.java is abstract class, a superclass for ShortestPathVertex.java and PageRankVertex.java. Those two class should be submitted by users. 
+Graph.txt is the data for testing. Should unzip it first. 
+
+Compile: 
+Type "sh run.sh" for all VMs.
+
+Run: 
+Start the introducer first and specify vertex type and iterations there. See server.java for command.
